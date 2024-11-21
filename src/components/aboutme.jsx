@@ -19,8 +19,9 @@ function AboutMe(){
           </div>
           </div>
           <div className='imgs'>
-          <img src='./dagersito.webp' className='aboutimg'/>          
-          <img src='./dagersito1.webp' className='aboutimg'/> 
+          <img src='./dagersito.webp' className='aboutimg' id="aimg"/>          
+          <img src='./dagersito1.webp' className='aboutimg'id="aimg1"/> 
+          <img src='./dagersito2.webp' className='aboutimg'id="aimg2"/> 
           </div>
         </div>
 }

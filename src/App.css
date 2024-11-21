@@ -16,9 +16,9 @@ header{
  display: flex; 
  align-items: center;
  justify-content: space-evenly;
- gap: 10em;
+
  color: white;
- margin-bottom: 17em;
+ margin-bottom: 16em;
  margin-top: 3em;
 }
 .container{
@@ -35,9 +35,15 @@ header{
   .aboutme h1{
     padding-top: 2em;
   }
+  #aimg1{
+    display: none;
+  }
+  #aimg2{
+    display: none;
+  }
   
   header{
-    flex-direction: column;    
+    flex-direction: column;
   }
 }
 
@@ -101,6 +107,7 @@ border-radius: 17px;
   background: transparent; 
   overflow: hidden; 
   margin-top: 3em;
+  
 }
 .overlay{
   position: absolute;
@@ -132,6 +139,9 @@ border-radius: 17px;
   flex-direction: row;
   align-items: center;
 }
+.inlineabouttext p{
+  text-wrap: wrap;
+}
 .text-overlay{ 
   position: absolute;   
   width: 100%;
@@ -142,6 +152,8 @@ border-radius: 17px;
 
 .imgs{
   width: 100%;
+  box-shadow: 0px 0px 15px 3px #5A009B;
+  margin: 1em;
    display: flex;
   flex-direction: row;
   
