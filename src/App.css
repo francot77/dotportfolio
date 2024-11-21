@@ -1,38 +1,180 @@
-.App {
-  text-align: center;
+*{
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  
+  background-color: black;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+header{
+ display: flex; 
+ align-items: center;
+ justify-content: space-evenly;
+ gap: 10em;
+ color: white;
+ margin-bottom: 17em;
+ margin-top: 3em;
+}
+.container{
+  padding-top: 1em;
+  background: linear-gradient(120deg,rgb(0,0,0) 28%,rgb(68,0,139));
+}
+@media (max-width: 768px) {
+  .container { margin-top: 2em;
+    background: linear-gradient(180deg,rgb(0,0,0) 28%,rgb(68,0,139));
+  }
+  .aboutimg{
+    width: 900px;
+  }
+  .aboutme h1{
+    padding-top: 2em;
+  }
+  
+  header{
+    flex-direction: column;    
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hero h1{
+  margin:0;
+  font-size: 35px;
+  font-weight: bold;
+  opacity: 0; /* Inicialmente las letras están invisibles */
+  display: inline-block; /* Asegura que cada letra se trata como un bloque individual */
+  animation: fadeIn 3s forwards; /* Animación de aparición */
+}
+.hero h3{
+  animation: fadeIn 1s forwards; /* Animación de aparición */
+  margin: 0.2em
+}
+.hero h4{
+  animation: fadeIn 6s forwards; /* Animación de aparición */
+  margin: 1em
+}
+.navbar{
+  position: fixed;
+  z-index: 10; 
+  left: 50%; 
+  transform: translateX(-50%);
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 1em;
+  background: black;
+  box-shadow: 0px 0px 15px 3px #5A009B;
+  border-radius: 17px;
+  width: max-content;
+}
+
+.anchornav{
+  text-decoration: none;
+  color: white;
+  padding: 1em;
+}
+
+
+.navlink{
+  padding: 3px;
+}
+.navlink:hover{
+background-color: #5A009B;
+border-radius: 17px;
+}
+
+.imagedager{ 
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  
+}
+.img-container{
+  position: relative;
+  border-radius: 45%;
+  width: max-content; 
+  background: transparent; 
+  overflow: hidden; 
+  margin-top: 3em;
+}
+.overlay{
+  position: absolute;
+  box-shadow: inset 0px 0px 50px 70px black;
+  background-color: transparent;
+  width: 100%;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: flex;
+  color: black;
+  height: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.aboutme{ 
+  padding-top: 2em;
+  color:white; 
+  overflow: hidden; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.aboutme h1,h2,p{
+  margin: 1em;
+}
+.aboutme h3{
+  color: gray;
+  margin-left: 1em;
+}
+.inlineabouttext{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.text-overlay{ 
+  position: absolute;   
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1; 
+}
+
+.imgs{
+  width: 100%;
+   display: flex;
+  flex-direction: row;
+  
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; 
   }
-  to {
-    transform: rotate(360deg);
+  
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.aboutme:active {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: animacion-aparece 1s ease-out forwards;
+  animation-delay: 1s; /* Agregar un retraso */
+  animation-fill-mode: both; /* Asegura que mantenga el último estado */
+}
+
+@keyframes animacion-aparece {
+  0% {
+    opacity: 0;
+    transform: translateY(30px); /* Comienza oculto y desplazado */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Llega a su posición final */
   }
 }
