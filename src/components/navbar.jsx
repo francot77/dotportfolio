@@ -8,7 +8,7 @@ const routes = [{
 },
 {
     title:"Contact",
-    path:"/contact"
+    path:"#contact"
 }
 ]
 

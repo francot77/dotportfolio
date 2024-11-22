@@ -3,9 +3,11 @@
   font-weight: 500;
   font-style: normal;
   box-sizing: border-box;
+   
 }
 html {
   scroll-behavior: smooth; 
+  
 }
 
 body{
@@ -18,49 +20,28 @@ header{
  justify-content: space-evenly;
 
  color: white;
- margin-bottom: 16em;
+ margin-bottom: 20em;
  margin-top: 3em;
 }
 .container{
   padding-top: 1em;
   background: linear-gradient(120deg,rgb(0,0,0) 28%,rgb(68,0,139));
 }
-@media (max-width: 768px) {
-  .container { margin-top: 2em;
-    background: linear-gradient(180deg,rgb(0,0,0) 28%,rgb(68,0,139));
-  }
-  .aboutimg{
-    width: 900px;
-  }
-  .aboutme h1{
-    padding-top: 2em;
-  }
-  #aimg1{
-    display: none;
-  }
-  #aimg2{
-    display: none;
-  }
-  
-  header{
-    flex-direction: column;
-  }
-}
 
 .hero h1{
   margin:0;
   font-size: 35px;
   font-weight: bold;
-  opacity: 0; /* Inicialmente las letras están invisibles */
-  display: inline-block; /* Asegura que cada letra se trata como un bloque individual */
-  animation: fadeIn 3s forwards; /* Animación de aparición */
+  opacity: 0; 
+  display: inline-block; 
+  animation: fadeIn 3s forwards; 
 }
 .hero h3{
-  animation: fadeIn 1s forwards; /* Animación de aparición */
+  animation: fadeIn 1s forwards; 
   margin: 0.2em
 }
 .hero h4{
-  animation: fadeIn 6s forwards; /* Animación de aparición */
+  animation: fadeIn 4s forwards; 
   margin: 1em
 }
 .navbar{
@@ -85,12 +66,22 @@ header{
   padding: 1em;
 }
 
-
+.icons{
+  display: flex;
+  flex-direction: row;
+  margin-top: 2em;  
+  justify-content: center;
+  align-items: center;
+}
+.icons a{
+  margin: 0 auto
+}
 .navlink{
   padding: 3px;
 }
 .navlink:hover{
-background-color: #5A009B;
+
+box-shadow:inset 0px 0px 15px 3px #5A009B,0px 0px 15px 3px #5A009B;
 border-radius: 17px;
 }
 
@@ -122,9 +113,11 @@ border-radius: 17px;
 }
 
 .aboutme{ 
-  padding-top: 2em;
+  padding-top: 5em;
+  text-wrap: nowrap;
   color:white; 
   overflow: hidden; 
+  padding-bottom: 16em;
 }
 
 .aboutme h1,h2,p{
@@ -142,29 +135,80 @@ border-radius: 17px;
 .inlineabouttext p{
   text-wrap: wrap;
 }
-.text-overlay{ 
-  position: absolute;   
+.text-overlay{     
   width: 100%;
-  height: 100%;
+  
   background-color: rgba(0, 0, 0, 0.5); 
   z-index: 1; 
+  
 }
 
 .imgs{
   width: 100%;
   box-shadow: 0px 0px 15px 3px #5A009B;
-  margin: 1em;
    display: flex;
   flex-direction: row;
   
 }
 
+.contacteiner{
+  width: 30%; 
+  padding: 2em;
+  margin:0 auto;
+  margin-top: 10em;
+  margin-bottom: 5em; 
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px 3px #5A009B;
+  background-color: rgba(0,0,0,0.5);
+}
+.contacteiner h1,label{
+  color:white;
+}
+.contacteiner input{
+  border: 3px solid #5A009B;
+  padding:0.5em;
+}.contacteiner textarea{
+  border: 3px solid #5A009B;
+  padding:0.5em;
+}
+.contacteiner textarea{
+ width: 100%;
+ height: 150px;
+  resize: none;
+}
+.formcontact{
+  display: flex;
+  flex-direction: column;
+  gap:1em;
+}
 
+#sendbutton{
+  padding: 0.5em;
+  color:white;
+  margin: 0 auto;
+  background-color: black;
+  border-radius: 15px;
+}
+
+#giticon{
+  animation: fadeIn 5s forwards; 
+}
+#linkicon{
+  animation: fadeIn 5.5s forwards;
+}
+#yticon{
+  animation: fadeIn 6s forwards; 
+}
+#igicon{
+  animation: fadeIn 6.5s forwards; 
+}
+#discicon{
+  animation: fadeIn 7s forwards; 
+}
 @keyframes fadeIn {
   0% {
     opacity: 0; 
-  }
-  
+  }  
   70% {
     opacity: 0;
   }
@@ -172,21 +216,44 @@ border-radius: 17px;
     opacity: 1;
   }
 }
-.aboutme:active {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: animacion-aparece 1s ease-out forwards;
-  animation-delay: 1s; /* Agregar un retraso */
-  animation-fill-mode: both; /* Asegura que mantenga el último estado */
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: gray;
+  padding: 1em;
+  margin-top: 2em;
+}
+footer h3,h4{
+  margin: 0.2em;
 }
 
-@keyframes animacion-aparece {
-  0% {
-    opacity: 0;
-    transform: translateY(30px); /* Comienza oculto y desplazado */
+@media (max-width: 720px) {
+  .container { margin-top: 2em;
+    background: linear-gradient(180deg,rgb(0,0,0) 28%,rgb(68,0,139));
   }
-  100% {
-    opacity: 1;
-    transform: translateY(0); /* Llega a su posición final */
+  .contacteiner{
+    width: 80%;
+  }
+  .aboutimg{
+    width: 900px;
+  }
+  .aboutme h1{
+    padding-top: 2em;
+  }
+  #aimg1{
+    display: none;
+  }
+  #aimg2{
+    display: none;
+  }
+  
+  header{
+    flex-direction: column;
   }
 }
+
+
