@@ -105,8 +105,9 @@ border-radius: 17px;
 }
 .img-container{
   position: relative;
-  border-radius: 45%;
-  width: max-content; 
+  border-radius: 50%;
+  width: max-content;
+  height: max-content;
   background: transparent; 
   overflow: hidden; 
   margin-top: 3em;
@@ -114,7 +115,7 @@ border-radius: 17px;
 }
 .overlay{
   position: absolute;
-  box-shadow: inset 0px 0px 50px 70px black;
+  box-shadow: inset 0px 0px 100px 40px black;
   background-color: transparent;
   width: 100%;
   align-items: center;
