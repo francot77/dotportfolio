@@ -385,7 +385,7 @@ footer h3,h4{
     flex-direction: column;
   }
   header{
-    margin-top: 2em;
+    margin-top: -4em;
     flex-direction: column;
   }
 }
