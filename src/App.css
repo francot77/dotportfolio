@@ -18,10 +18,10 @@ header{
  display: flex; 
  align-items: center;
  justify-content: space-evenly;
-
+height: 100vh;
  color: white;
  margin-bottom: 20em;
- margin-top: 8em;
+ 
 }
 .container{
   padding-top: 1em;
@@ -58,6 +58,9 @@ header{
   box-shadow: 0px 0px 15px 3px #5A009B;
   border-radius: 17px;
   width: max-content;
+}
+.responsiveNav{
+  display: none;
 }
 
 .anchornav{
@@ -113,12 +116,18 @@ border-radius: 17px;
 }
 
 .aboutme{ 
- 
-  padding-top: 5em;
+  
+  height: 100vh;
   text-wrap: nowrap;
   color:white; 
   overflow: hidden; 
   padding-bottom: 16em;
+}
+#about-section-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  align-items: center;
 }
 
 .aboutme h1,h2,p{
@@ -138,10 +147,8 @@ border-radius: 17px;
 }
 .text-overlay{     
   width: 100%;
-  
   background-color: rgba(0, 0, 0, 0.5); 
-  z-index: 1; 
-  
+  z-index: 1;
 }
 
 .imgs{
@@ -151,15 +158,27 @@ border-radius: 17px;
   flex-direction: row;
   
 }
-
+#contact{
+  height: 75vh;
+  margin-top: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#aboutbackimg{
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+  opacity: 0.3;  
+  
+}
 .contacteiner{
  
   width: 30%; 
-  height: max-content !important;
+ 
   padding: 2em;
   margin:0 auto;
-  margin-top: 10em;
-  margin-bottom: 5em; 
   border-radius: 20px;
   box-shadow: 0px 0px 15px 3px #5A009B;
   background-color: rgba(0,0,0,0.5);
@@ -266,9 +285,6 @@ footer h3,h4{
   input,textarea,button{
     font-size: x-large;
   }
-  header{
-    margin-top: 10em;
-  }
   iframe{
     width: max-content;
     height: 100%;    
@@ -292,6 +308,15 @@ footer h3,h4{
 
 
 @media (max-width: 720px) {
+  .responsiveNav{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-right: 5em;
+  }
+  .navbar{
+    display: none;
+  }
   .container { margin-top: 2em;
     background: linear-gradient(180deg,rgb(0,0,0) 28%,rgb(68,0,139));
   }
@@ -300,6 +325,17 @@ footer h3,h4{
   }
   .aboutimg{
     width: 900px;
+  }
+  .aboutme{
+    background-size:cover;  
+    background-color: rgba(0,0,0,0.5);    
+  }
+  #about-section-container{
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr;
+  }
+  #aboutbackimg{
+    height: 50vh;
   }
   .aboutme h1{
     padding-top: 2em;

@@ -1,8 +1,13 @@
+import Carousel from "./carousel";
+
 function AboutMe(){
-    return <div className='aboutme snapsection' id='aboutme'>        
+    return <div className='aboutme ' id='aboutme'>
+        
+<img id="aboutbackimg" src="./aboutback.webp" alt="una foto no robada de dager"/>
+        <div id="about-section-container">       
+        <section>
           <h1>About me</h1>
           <h2>My name is Mariano Villa</h2>
-          <div className='text-overlay'>
           <div className='inlineabouttext'>
           <h3>🖥️ Senior developer/lead -</h3><p>I can program even in a calculator.</p>
           </div>
@@ -17,13 +22,13 @@ function AboutMe(){
           <h3>💀 Megalofobic -</h3>
           <p>I'm scared of big things that aren't penises.</p>
           </div>
-          </div>
-          <div className='imgs'>
-          <img alt="dagercito" src='./dagersito.webp' className='aboutimg' id="aimg"/>          
-          <img alt="dagercito" src='./dagersito1.webp' className='aboutimg'id="aimg1"/> 
-          <img alt="dagercito" src='./dagersito2.webp' className='aboutimg'id="aimg2"/> 
-          <img alt="dagercito" src='./dagersito3.webp' className='aboutimg'id="aimg3"/> 
-          </div>
+      </section>
+      
+          
+          <section >
+          <Carousel />
+          </section>
+        </div>
         </div>
 }
 

@@ -2,7 +2,8 @@
 
 function Contact(){
     
-    return <div className="contacteiner" id="contact">        
+    return <div id="contact">
+        <div className="contacteiner" >
         <h1>Contact me</h1>
         <form id="contact-form" className="formcontact" onSubmit={(event)=>{
             event.preventDefault()
@@ -15,6 +16,7 @@ function Contact(){
             <button id="sendbutton" type="submit">Send Email</button>
         </form>
         
+        </div>
     </div>
 }
 
