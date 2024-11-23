@@ -3,7 +3,7 @@ import Carousel from "./carousel";
 function AboutMe(){
     return <div className='aboutme ' id='aboutme'>
         
-<img id="aboutbackimg" src="./aboutback.webp" alt="una foto no robada de dager"/>
+{/* <img id="aboutbackimg" src="./aboutback.webp" alt="una foto no robada de dager"/> */}
         <div id="about-section-container">       
         <section id="abouts">
           <div>

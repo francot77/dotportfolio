@@ -7,7 +7,7 @@ function Experience(){
          <div id="expgrid">
           <h1>My experience</h1>
           <div className='inlineabouttext'>
-          <h3>🔸 Freelancer 🔸</h3><p>I work builing pages like <span style={{color:"red"}}>petardashd.com</span> and these style.</p>
+          <h3>🔸 Freelancer 🔸</h3><p>I work builing pages like <span style={{color:"red"}}>xvideos.com</span> and these style.</p>
           </div>
           <div className='inlineabouttext'>
             <h3>🔸 Full time 🔸</h3>
