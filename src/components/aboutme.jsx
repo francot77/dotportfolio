@@ -6,7 +6,8 @@ function AboutMe(){
 <img id="aboutbackimg" src="./aboutback.webp" alt="una foto no robada de dager"/>
         <div id="about-section-container">       
         <section id="abouts">
-          <h1>About me</h1>
+          <div>
+          <h1 style={{marginBottom:"2em"}}>About me</h1>
           <h2>My name is Mariano Villa</h2>
           <div className='inlineabouttext'>
           <h3>🖥️ Senior developer/lead -</h3><p>I can program even in a calculator.</p>
@@ -22,12 +23,19 @@ function AboutMe(){
           <h3>💀 Megalofobic -</h3>
           <p>I'm scared of big things that aren't penises.</p>
           </div>
+          <div className='inlineabouttext'>
+          <h3>🎮 Hobbies -</h3>
+          <p>I have a community where the vast majority are otakus.</p>
+          </div>
+          </div>
+          <div className="centerdiv">
+          <Carousel />
+          </div>
       </section>
       
           
-          <section >
-          <Carousel />
-          </section>
+          
+          
         </div>
         </div>
 }

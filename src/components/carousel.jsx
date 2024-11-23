@@ -4,7 +4,7 @@ import "../Carousel.css";
 const Carousel = () => {
         const items=[
             './dagersito.webp',         
-            './dagersito1.webp',
+            
             './dagersito2.webp',
             './dagersito3.webp']
       const [currentIndex, setCurrentIndex] = useState(0);

@@ -1,11 +1,12 @@
 .carousel {
-  position: relative;
+  position: relative;  
   width: 100%;
-  max-width: 1000px; /* Aumenta el ancho máximo en pantallas grandes */
+  max-width: 1000px; 
   overflow: hidden;
   margin: auto;
   border: none;
-  border-radius: 8px;
+  
+  border-radius: 15px;
 }
 
 .carousel-track {
@@ -14,22 +15,24 @@
 }
 
 .carousel-item {
-  flex: 0 0 100%; /* Cada item ocupa el 100% del ancho del carrusel */
+  flex: 0 0 100%; 
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: transparent;
+  border-radius: 15px;
 }
 
 .carousel-item img {
   width: 100%;
   height: auto;
-  object-fit: contain; /* Las imágenes no se deforman */
-  max-height: 400px; /* Altura máxima por defecto */
+  object-fit: contain;
+  border-radius: 15px;
+  max-height: 400px; 
 }
 
-/* Botones */
+
 .carousel-button {
   position: absolute;
   top: 50%;
@@ -55,18 +58,18 @@
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Estilos Responsivos */
+
 @media (min-width: 768px) {
   .carousel-item img {
-    max-height: 500px; /* Mayor altura en pantallas medianas */
+    max-height: 500px; 
   }
 }
 
 @media (min-width: 1024px) {
   .carousel {
-    max-width: 800px; /* Aumenta el ancho máximo en pantallas grandes */
+    max-width: 800px; 
   }
   .carousel-item img {
-    max-height: 600px; /* Aumenta la altura máxima en pantallas grandes */
+    max-height: 600px;
   }
 }

@@ -5,6 +5,7 @@ import Header from './components/header';
 import Contact from './components/contact';
 import Footer from './components/footer';
 import Lumber from './components/lumber';
+import Experience from './components/experience';
 
 function App() {
  
@@ -13,6 +14,7 @@ function App() {
        <NavBar/>       
        <Header/>
         <AboutMe/>
+        <Experience/>
         <Contact/>
         <Lumber/>
         <Footer/>

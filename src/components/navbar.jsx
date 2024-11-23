@@ -7,6 +7,9 @@ const routes = [{
 }, {
     title:"About",
     path:"#aboutme"
+},{
+    title:"Experience",
+    path:"#experience"
 },
 {
     title:"Contact",
@@ -31,7 +34,7 @@ function NavBar() {
     {isOpen?
     <div id="rnavContainer">
         {routes.map(rt=>{
-            return <div className="navlink"><a className="anchornav" href={rt.path}>{rt.title}</a></div>
+            return <div  className="navlink"><a className="anchornav" onClick={()=>{setIsOpen(false)}} href={rt.path}>{rt.title} </a></div>
         })}
         <button style={{margin:"0.3em", alignSelf:"center"}} onClick={()=>{setIsOpen(false)}}>X</button>
     </div>

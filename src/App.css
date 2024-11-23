@@ -29,6 +29,10 @@ height: 100vh;
  
 }
 .container{
+  scroll-snap-type: y mandatory; /* Define que el scroll será vertical y obligatorio */
+  overflow-y: scroll; /* Activa el scroll vertical */
+  height: max-content;
+  scroll-behavior: smooth; /* Scroll suave */
   padding-top: 1em;
   background: linear-gradient(120deg,rgb(0,0,0) 28%,rgb(68,0,139));
 }
@@ -128,21 +132,47 @@ border-radius: 17px;
   overflow: hidden; 
   padding-bottom: 16em;
 }
-#about-section-container{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+#about-section-container{  
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   align-items: center;
   
 }
 #abouts{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
   margin: 1em;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.7);
   border-radius: 15px;
   z-index: 9;
   box-shadow: 0px 0px 15px 3px #5A009B;
 }
-
+#expcontainer{
+  height: max-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+  padding: 2em;
+  align-items: center;
+  margin: 1em;
+  margin-top: 2em;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 15px 3px #5A009B;
+}
+#exp-img{
+  height: auto;
+}
+#experience{
+  height: 100vh;
+}
+#expgrid{
+  text-wrap: nowrap;
+  color: white;
+}
 .aboutme h1,h2,p{
   margin: 0.5em;
 }
@@ -321,10 +351,21 @@ footer h3,h4{
 
 
 @media (max-width: 720px) {
+  #expcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  #exp-image{
+    height: 300px;
+  }
   .responsiveNav{
     position: fixed;
     z-index: 100;
-    right: 4%;
+    top:2%;
+    right: 2%;
     display: flex;
     justify-content: flex-end;
     justify-content: center;
@@ -356,12 +397,13 @@ footer h3,h4{
     background-size:cover;  
     background-color: rgba(0,0,0,0.5);    
   }
-  #about-section-container{
-    grid-template-columns: none;
-    grid-template-rows: 1fr 1fr;
-  }
   #aboutbackimg{
     height: 50vh;
+  }
+  #abouts{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
   .aboutme h1{
     padding-top: 2em;
