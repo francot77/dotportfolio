@@ -9,6 +9,8 @@ const Carousel = () => {
             './dagersito3.webp']
       const [currentIndex, setCurrentIndex] = useState(0);
     
+          
+
       const handleNext = () => {
         setCurrentIndex((prevIndex) =>
           prevIndex === items.length - 1 ? 0 : prevIndex + 1
@@ -20,7 +22,8 @@ const Carousel = () => {
           prevIndex === 0 ? items.length - 1 : prevIndex - 1
         );
       };
-    
+
+      
       return (
         <div className="carousel">
           <div

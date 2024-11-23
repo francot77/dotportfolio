@@ -5,7 +5,7 @@ function AboutMe(){
         
 <img id="aboutbackimg" src="./aboutback.webp" alt="una foto no robada de dager"/>
         <div id="about-section-container">       
-        <section>
+        <section id="abouts">
           <h1>About me</h1>
           <h2>My name is Mariano Villa</h2>
           <div className='inlineabouttext'>

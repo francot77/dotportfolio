@@ -5,6 +5,11 @@
   box-sizing: border-box;
    
 }
+a {
+  user-select: none; 
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent; 
+}
 html {
   scroll-behavior: smooth; 
   
@@ -128,6 +133,14 @@ border-radius: 17px;
   grid-template-columns: 1fr 1fr;
   height: 100vh;
   align-items: center;
+  
+}
+#abouts{
+  margin: 1em;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 15px;
+  z-index: 9;
+  box-shadow: 0px 0px 15px 3px #5A009B;
 }
 
 .aboutme h1,h2,p{
@@ -309,10 +322,23 @@ footer h3,h4{
 
 @media (max-width: 720px) {
   .responsiveNav{
+    position: fixed;
+    z-index: 100;
+    right: 4%;
     display: flex;
-    width: 100%;
     justify-content: flex-end;
-    margin-right: 5em;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
+    border-radius: 15px;
+    
+  }
+  #rnavContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
   }
   .navbar{
     display: none;

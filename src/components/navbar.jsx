@@ -26,13 +26,14 @@ function NavBar() {
             return <div className="navlink"><a className="anchornav" href={rt.path}>{rt.title}</a></div>
         })}
     </nav>
-    <nav className="responsiveNav">
+    <nav className="responsiveNav" style={{border:`${isOpen?"1px solid gray":""}`,backgroundColor:`${isOpen?"black":""}`,boxShadow:`${isOpen?"0px 0px 15px 3px #5A009B":""}`}}>
         {!isOpen?<MenuIcon funct={handleClick}/>:null}
     {isOpen?
-    <div>
+    <div id="rnavContainer">
         {routes.map(rt=>{
             return <div className="navlink"><a className="anchornav" href={rt.path}>{rt.title}</a></div>
         })}
+        <button style={{margin:"0.3em", alignSelf:"center"}} onClick={()=>{setIsOpen(false)}}>X</button>
     </div>
     :null}
     </nav>

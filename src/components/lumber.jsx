@@ -9,7 +9,7 @@ function Lumber(){
             disableScroll()
         }} style={{color:"white",margin:"0 auto",fontSize:"50px",background:"none",borderRadius:"15px"}}>🪓</button>
     {modal?<div style={{position:"absolute", width:"100vw",height:"100vh", backgroundColor:"black",alignItems:"center",zIndex:999,display:"flex",justifyContent:"center",flexDirection:"column"}}>
-            <iframe id="lumberiframe" title="LumberJack"   src="https://tbot.xyz/lumber/" style={{border:"none"}}/>
+            <iframe id="lumberiframe" title="LumberJack"  src="https://tbot.xyz/lumber/" style={{border:"none"}}/>
             <button onClick={()=>{
                 setModal(false)
                 enableScroll()
