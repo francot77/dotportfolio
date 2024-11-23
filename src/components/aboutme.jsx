@@ -24,7 +24,7 @@ function AboutMe(){
           <p>I'm scared of big things that aren't penises.</p>
           </div>
           <div className='inlineabouttext'>
-          <h3>🎮 Hobbies -</h3>
+          <h3>🫂Community-</h3>
           <p>I have a community where the vast majority are otakus.</p>
           </div>
           </div>
