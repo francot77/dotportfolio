@@ -5,9 +5,9 @@ import LinkedinIcon from "../icons/linkedin";
 import YouTubeIcon from "../icons/youtube";
 
 function Header(){
-    return <header>
+    return <header className="snapsection" >
     <div className='img-container'>
-      <div className='overlay'><h2>Hi</h2></div>
+      <div className='overlay'></div>
       <img alt="hero dagersito" src='./transparentdager.webp' width={400} className='image-dager'/>
     </div>
     <section className='hero'>
@@ -17,7 +17,7 @@ function Header(){
       <br/>
       <div className="icons">
 
-      <GitHubIcon path="https://github.com/marianovilla" id="giticon"/>
+      <GitHubIcon path="https://github.com/marianovilla" id="giticon" />
       <LinkedinIcon path="https://www.linkedin.com/in/mariano-luis-villa" id="linkicon"/>
       <YouTubeIcon path="https://www.youtube.com/@DotDager" id="yticon"/>
       <InstagramIcon path="https://www.instagram.com/dager.32/" id="igicon"/>

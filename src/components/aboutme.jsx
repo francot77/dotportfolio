@@ -1,8 +1,8 @@
 function AboutMe(){
-    return <div className='aboutme' id='aboutme'>        
+    return <div className='aboutme snapsection' id='aboutme'>        
           <h1>About me</h1>
-          <div className='text-overlay'>
           <h2>My name is Mariano Villa</h2>
+          <div className='text-overlay'>
           <div className='inlineabouttext'>
           <h3>🖥️ Senior developer/lead -</h3><p>I can program even in a calculator.</p>
           </div>
@@ -22,6 +22,7 @@ function AboutMe(){
           <img alt="dagercito" src='./dagersito.webp' className='aboutimg' id="aimg"/>          
           <img alt="dagercito" src='./dagersito1.webp' className='aboutimg'id="aimg1"/> 
           <img alt="dagercito" src='./dagersito2.webp' className='aboutimg'id="aimg2"/> 
+          <img alt="dagercito" src='./dagersito3.webp' className='aboutimg'id="aimg3"/> 
           </div>
         </div>
 }

@@ -9,9 +9,8 @@ import Lumber from './components/lumber';
 function App() {
  
   return (
-    <div className="container" id="home">
-                
-                <NavBar/>
+    <div className="container" id='home' >
+       <NavBar/>       
        <Header/>
         <AboutMe/>
         <Contact/>

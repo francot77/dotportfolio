@@ -21,7 +21,7 @@ header{
 
  color: white;
  margin-bottom: 20em;
- margin-top: 3em;
+ margin-top: 8em;
 }
 .container{
   padding-top: 1em;
@@ -113,6 +113,7 @@ border-radius: 17px;
 }
 
 .aboutme{ 
+ 
   padding-top: 5em;
   text-wrap: nowrap;
   color:white; 
@@ -121,7 +122,7 @@ border-radius: 17px;
 }
 
 .aboutme h1,h2,p{
-  margin: 1em;
+  margin: 0.5em;
 }
 .aboutme h3{
   color: gray;
@@ -152,7 +153,9 @@ border-radius: 17px;
 }
 
 .contacteiner{
+ 
   width: 30%; 
+  height: max-content !important;
   padding: 2em;
   margin:0 auto;
   margin-top: 10em;
@@ -192,18 +195,23 @@ border-radius: 17px;
 
 #giticon{
   animation: fadeIn 5s forwards; 
+  width: 40px;
 }
 #linkicon{
   animation: fadeIn 5.5s forwards;
+  width: 40px;
 }
 #yticon{
   animation: fadeIn 6s forwards; 
+  width: 40px;
 }
 #igicon{
   animation: fadeIn 6.5s forwards; 
+  width: 40px;
 }
 #discicon{
   animation: fadeIn 7s forwards; 
+  width: 40px;
 }
 @keyframes fadeIn {
   0% {
@@ -216,20 +224,72 @@ border-radius: 17px;
     opacity: 1;
   }
 }
-
+iframe{
+  width: 600px;
+  height: 1000px;
+}
 footer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   background-color: rgba(0, 0, 0, 0.5);
   color: gray;
-  padding: 1em;
-  margin-top: 2em;
+  padding: 1em;  
+  height: max-content !important;
 }
 footer h3,h4{
   margin: 0.2em;
 }
+
+.centerdiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#modalend{
+  position:absolute;
+  width:100vw;
+  text-align: center;
+  margin-left:-1em;
+  margin-top:-2em;
+  z-index: 300;
+  height:100vh;
+  background-color: black;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+}
+
+@media (min-width: 2560px) {
+  body {
+      font-size: 35px; 
+  }
+  input,textarea,button{
+    font-size: x-large;
+  }
+  header{
+    margin-top: 10em;
+  }
+  iframe{
+    width: max-content;
+    height: 100%;    
+  }
+  #giticon{
+    width: 80px;
+  }
+  #discicon{
+    width: 80px
+  }
+  #yticon{
+    width: 80px
+  }
+  #linkicon{
+    width: 80px
+  }
+  #igicon{
+    width: 80px
+  }
+}
+
 
 @media (max-width: 720px) {
   .container { margin-top: 2em;
@@ -251,7 +311,19 @@ footer h3,h4{
     display: none;
   }
   
+  #aimg3{
+    display: none;
+  }
+  #aimg4{
+    width: 400px;
+  }
+  #modalend{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
   header{
+    margin-top: 2em;
     flex-direction: column;
   }
 }
